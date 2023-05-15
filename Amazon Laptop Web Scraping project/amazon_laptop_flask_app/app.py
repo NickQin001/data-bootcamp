@@ -19,8 +19,8 @@ app = Flask(__name__,
             static_folder='static',
             template_folder='templates')
 
-# run_with_ngrok(app)
-# ngrok.set_auth_token(ngrok_auth)
+run_with_ngrok(app)
+ngrok.set_auth_token(ngrok_auth)
 
 app.config["UPLOAD_FOLDER"] = "uploads"
 app.config["STATIC_IMAGE"] ="static/images"
