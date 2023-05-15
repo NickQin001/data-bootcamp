@@ -1,1 +1,2 @@
-# data-bootcamp
+# stern data-bootcamp
+Class information, exercise code, and assignments for NYU Stern Data Bootcamp.
