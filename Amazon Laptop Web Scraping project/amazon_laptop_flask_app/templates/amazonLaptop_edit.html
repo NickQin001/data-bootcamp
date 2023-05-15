@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block content%}
+    <h1> Edit information</h1>
+    <hr />
+
+    <form method="POST">
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="PRODUCT_ID" class="form-label">PRODUCT ID</label>
+                <div class="sol-sm-10">
+                    <input disabled type="text" name="PRODUCT_ID" class="form-control" id="PRODUCT_ID" value="{{data[0] if data[0] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="PRODUCT_DESCRIPTION" class="form-label">PRODUCT DESCRIPTION</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="PRODUCT_DESCRIPTION" class="form-control" id="PRODUCT_DESCRIPTION" value="{{data[1] if data[1] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="RATING_SCORE" class="form-label">RATING SCORE</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="RATING_SCORE" class="form-control" id="RATING_SCORE" value="{{data[2] if data[2] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="NUMBER_OF_GLOBAL_RATING" class="form-label">NUMBER OF GLOBAL RATING</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="NUMBER_OF_GLOBAL_RATING" class="form-control" id="NUMBER_OF_GLOBAL_RATING" value="{{data[3] if data[3] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="CURRENT_PRICE" class="form-label">CURRENT PRICE</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="CURRENT_PRICE" class="form-control" id="CURRENT_PRICE" value="{{data[4] if data[4] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="ORIGINAL_PRICE" class="form-label">ORIGINAL PRICE</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="ORIGINAL_PRICE" class="form-control" id="ORIGINAL_PRICE" value="{{data[5] if data[5] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="OPERATING_SYSTEM" class="form-label">OPERATING SYSTEM</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="OPERATING_SYSTEM" class="form-control" id="OPERATING_SYSTEM" value="{{data[6] if data[6] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="BRAND" class="form-label">BRAND</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="BRAND" class="form-control" id="BRAND" value="{{data[7] if data[7] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="HAVING_DISCOUNT" class="form-label">HAVING DISCOUNT</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="HAVING_DISCOUNT" class="form-control" id="HAVING_DISCOUNT" value="{{data[8] if data[8] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="DISPLAY_SIZE_INCHES" class="form-label">DISPLAY SIZE INCHES</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="DISPLAY_SIZE_INCHES" class="form-control" id="DISPLAY_SIZE_INCHES" value="{{data[9] if data[9] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="DISK_SIZE_GB" class="form-label">DISK SIZE GB</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="DISK_SIZE_GB" class="form-control" id="DISK_SIZE_GB" value="{{data[10] if data[10] else ''}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3">
+                <label for="RAM_GB" class="form-label">RAM GB</label>
+                <div class="sol-sm-10">
+                    <input type="text" name="RAM_GB" class="form-control" id="RAM_GB" value="{{data[11] if data[11] else ''}}">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-1"><button type="submit" class="btn btn-success">Save</button></div>
+                <div class="col-1"><button href="/amazonLaptop" class="btn btn-secondary">Cancel</button></div>
+        </div>
+
+    </form>
+{% endblock content %}
